@@ -89,11 +89,7 @@ Before you begin, ensure you have the following installed on your machine:
 - `DJANGO_SECRET_KEY`: Your Django secret key.
 - `EMAIL_HOST_USER`: Your Gmail address.
 - `EMAIL_HOST_PASSWORD`: The App Password generated for your Gmail account.
-
-## Screenshots
-
-![Screenshot of the Mail App](images/Screenshot%20(99).png)
-
+- 
 ## License
 
 This project is licensed under the MIT License. Feel free to modify and distribute.
