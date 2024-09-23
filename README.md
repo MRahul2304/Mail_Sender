@@ -1,6 +1,3 @@
-Here's a README file for your Django Mail Sender project:
-
-```markdown
 # Django Mail Sender Project
 
 This is a simple Django project that allows users to send emails through a web form using their Gmail account. It features a basic interface for composing and sending emails, along with success or failure feedback messages.
@@ -109,7 +106,3 @@ Feel free to submit issues, fork the repo, or create pull requests!
 
 - Ensure you have enabled "App Passwords" in your Google Account settings to use Gmail with this project.
 - If the email fails to send, check your environment variables and ensure that all required fields are filled out in the form.
-
-```
-
-Make sure to replace placeholders like the GitHub repository URL with actual values.
