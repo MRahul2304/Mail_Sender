@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
+    <title>Mail App</title>
+</head>
+<body>
+    <div>
+        <h1>Mail Sender</h1>
+
+        <!-- Display messages for success or failure -->
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li class="{% if message.tags %}{{ message.tags }}{% endif %}">
+                        {{ message }}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <form method="post">
+            {% csrf_token %}
+            <label for="address">To:</label>
+            <input id="address" type="email" name="address" required/>
+
+            <label for="subject">Subject:</label>
+            <input id="subject" name="subject" required/>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Send Email">
+        </form>
+    </div>
+</body>
+</html>
